@@ -1,0 +1,219 @@
+/* Start Global */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width:80%;
+    margin:auto;
+}
+
+/* End Global*/
+
+/*Start Budget Section*/
+
+.budget {
+    color: #fff;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 250px;
+}
+.budget .overlay {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.budget .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.budget .date , .budget .total-budget , .budget .total-inc {
+    margin-bottom: 1rem;
+}
+.budget .date {
+    font-size: 1.3rem;
+}
+.budget .total-budget {
+    font-size: 2.5rem;
+}
+.budget .total-inc, .budget .total-exp {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    height: 50px;
+    align-items: center;
+}
+.budget .total-inc {
+    background-color: #28B9B5;
+}
+.budget .total-exp {
+    background-color: #FF5049;
+}
+
+.budget .total-inc .text, .budget .total-exp .text {
+    color: #333;
+    font-size: 0.8rem;
+}
+.budget .total-exp .num, .budget .total-inc .num {
+    display: flex;
+    align-items: center;
+}
+
+.budget .total-exp .num .percentage, .budget .total-inc .num .percentage {
+    width: 35px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    
+}
+.budget .total-exp .num .percentage {
+    background-color: #f96e68;
+}
+/* End Budget Section */
+
+/* Start User Inputs Field */
+.user-input  {
+    padding: 1rem 0;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e7e7e7;
+}
+.user-input .container {
+    display: flex;
+    justify-content: center;
+}
+
+.user-input .budget-type, .user-input .discrip, .user-input .val, .user-input button {
+    margin: 0 0.25rem;
+}
+.user-input .budget-type, .user-input .discrip, .user-input .val {
+    border: 1px solid #e7e7e7;
+}
+.user-input .budget-type {
+    width: 45px;
+    height: 45px;
+    
+}
+.user-input .discrip, .user-input .val {
+    padding: 0 0.5rem;
+}
+.user-input .val {
+    width: 100px;
+}
+.user-input .discrip {
+    width: 45%;
+}
+.user-input button {
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+.user-input button:hover {
+    cursor: pointer;
+}
+.user-input button i {
+    color: #28B9B5;
+}
+
+/* End User Inputs Field */
+
+/*Start Budget Details*/
+.budget-details {
+    padding: 2rem 0;
+}
+.budget-details .container {
+    display: flex;
+    justify-content: space-between;
+}
+.budget-details .inc, .budget-details .exp {
+    width: 100%;
+}
+.budget-details .inc {
+    margin-right: 2rem;
+}
+.budget-details .inc .text, .budget-details .exp .text {
+    padding: 2rem 0;
+}
+.budget-details .inc .text {
+    color:#28B9B5 ;
+}
+.budget-details .exp .text {
+    color:#FF5049 ;
+}
+.budget-details .inc .item, .budget-details .exp .item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e7e7e7;
+    height: 50px;
+    padding: 0 0.5rem;
+}
+.budget-details .inc .item .num, .budget-details .exp .item .num {
+    display: flex;
+}
+.budget-details .inc .item .num, .budget-details .inc .item .num button {
+    color:#28B9B5 ;
+}
+.budget-details .exp .item .num, .budget-details .exp .item .num button {
+    color: #FF5049;
+}
+.budget-details .exp .item .num {
+    display: flex;
+    align-items: center;
+}
+.budget-details .exp .item .num .percentage {
+    width: 35px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    background-color: #FFDAD9;
+    
+}
+.budget-details .inc .item .num .inc-num, .budget-details .exp .item .num .percentage {
+    margin-right: 0;
+    transition: all 0.25s ease-in-out;
+}
+.budget-details .inc .item .num:hover .inc-num, .budget-details .exp .item .num:hover .percentage {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.budget-details .inc .item .num button, .budget-details .exp .item .num button {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+
+.budget-details .inc .item .num:hover button, .budget-details .exp .item .num:hover button {
+    display: block;
+    cursor: pointer;
+}
+
+.red {
+    color: #FF5049 !important;
+}
+.red-inputs {
+    outline-color: #FF5049 !important;
+}
+
+/*End Budget Details*/

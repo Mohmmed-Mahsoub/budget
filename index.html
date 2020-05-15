@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>general template</title>
+        
+        <!--nice reset -->
+        
+        <link rel = "stylesheet" href = "css/normalize.css" />
+        
+        <!-- font awsome libarary -->
+        
+        <link rel = "stylesheet" href = "css/font-awesome.min.css" />
+        
+        <!-- main css style file -->
+        
+        <link rel = "stylesheet" href = "css/main.css" />
+        
+    </head>
+    <body>
+
+        <!-- Start Budget Section-->
+        <section class="budget">
+            <div class="overlay">
+                <div class="container">
+                    <div class="date">
+                        Available Budget in May 2020
+                    </div>
+                    <div class="total-budget">
+                        - 522.00
+                    </div>
+                    <div class="total-inc">
+                        <div class="text">
+                            INCOME
+                        </div>
+                        <div class="num">
+                            <div class="inc-num">
+                                + 2,000.00
+                            </div>
+    
+                            <div class="percentage">
+                                
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="total-exp">
+                        <div class="text">
+                            EXPENSES
+                        </div>
+                        <div class="num">
+                            <div class="exp-num">
+                                - 522.00
+                            </div>
+                            
+                            <div class="percentage">
+                                26%
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </section>
+        <!-- End Budget Section-->
+
+        <!-- Start User Inputs Field -->
+        <section class="user-input">
+            <div class="container">
+                <select class="budget-type">
+                    <option value="inc">+</i></option>
+                    <option value="exp">-</i></option>
+                </select>
+                <input class="discrip" type="text" placeholder="add descriptiob">
+                <input class="val" type="number" placeholder="value">
+                <button class="submit"><i class="fa fa-check-circle-o  fa-2x"></i></button>
+            </div>
+            
+        </section>
+        <!-- End User Inputs Field -->
+
+        <!-- Start Budget Details -->
+        <section class="budget-details">
+            <div class="container">
+                <div class="inc">
+                    <div class="text">INCOME</div>
+                    <!--
+                    <div class="item">
+                        <div class="descrip">
+                            descrip
+                        </div>
+                        <div class="num">
+                            <div class="inc-num">
+                                522.00
+                            </div>
+                            <button><i class="fa fa-times-circle-o fa-lg" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                -->
+                </div>
+                <div class="exp">
+                    <div class="text">EXPENSES</div>
+                    <!--
+                    <div class="item">
+                        <div class="descrip">
+                            descrip
+                        </div>
+                        <div class="num">
+                            <div class="exp-num">
+                                - 522.00
+                            </div>
+                            
+                            <div class="percentage">
+                                26%
+                                
+                            </div>
+                            <button><i class="fa fa-times-circle-o fa-lg" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                -->
+                </div>
+            </div>
+        </section>
+        <!-- End Budget Details -->
+        
+        
+        <script src="js/custom.js"> </script>
+    
+    </body>
+</html>
